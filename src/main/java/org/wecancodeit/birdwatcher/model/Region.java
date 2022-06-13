@@ -1,4 +1,4 @@
-package org.wecancodeit.birdwatcher;
+package org.wecancodeit.birdwatcher.model;
 
 
 import javax.persistence.Entity;
@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class regionModel {
+public class Region {
 
     @Id@GeneratedValue
 
@@ -15,11 +15,11 @@ public class regionModel {
     private String country;
     private String regionDescription;
 
-    public regionModel(){
+    public Region(){
 
     }
 
-    public regionModel(String regionName, String country, String regionDescription) {
+    public Region(String regionName, String country, String regionDescription) {
         this.regionName = regionName;
         this.country = country;
         this.regionDescription = regionDescription;
@@ -46,7 +46,7 @@ public class regionModel {
 
     @Override
     public String toString() {
-        return "regionModel{" +
+        return "Region{" +
                 "id=" + id +
                 ", regionName='" + regionName + '\'' +
                 ", country='" + country + '\'' +

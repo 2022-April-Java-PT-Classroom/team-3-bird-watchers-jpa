@@ -1,6 +1,7 @@
-package org.wecancodeit.birdwatcher;
+package org.wecancodeit.birdwatcher.repo;
 
 import org.springframework.data.repository.CrudRepository;
+import org.wecancodeit.birdwatcher.model.About;
 
 public interface AboutRepository extends CrudRepository<About, Long> {
 }

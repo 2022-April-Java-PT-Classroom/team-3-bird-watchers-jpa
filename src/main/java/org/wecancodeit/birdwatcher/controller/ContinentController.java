@@ -1,4 +1,4 @@
-package org.wecancodeit.birdwatcher;
+package org.wecancodeit.birdwatcher.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

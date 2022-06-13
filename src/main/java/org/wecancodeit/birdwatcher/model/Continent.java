@@ -1,4 +1,4 @@
-package org.wecancodeit.birdwatcher;
+package org.wecancodeit.birdwatcher.model;
 
 import net.bytebuddy.dynamic.loading.InjectionClassLoader;
 
