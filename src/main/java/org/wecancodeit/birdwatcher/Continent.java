@@ -4,13 +4,14 @@ import net.bytebuddy.dynamic.loading.InjectionClassLoader;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Continent {
     private String name;
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     public Continent(){
@@ -23,6 +24,10 @@ public class Continent {
 
     public String getName() {
         return name;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     @Override
