@@ -4,8 +4,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 public class Habitat {
-    @Id
-    @GeneratedValue
     private Long id;
     private String HabitatType;
     private String Location;
@@ -15,8 +13,8 @@ public class Habitat {
 
     public Habitat(Long id, String habitatType, String location) {
         this.id = id;
-        HabitatType = habitatType;
-        Location = location;
+        this.HabitatType = habitatType;
+        this.Location = location;
     }
 
     public Long getId() {
