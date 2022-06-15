@@ -1,3 +1,4 @@
+
 package org.wecancodeit.birdwatcher.model;
 
 import javax.persistence.Entity;
