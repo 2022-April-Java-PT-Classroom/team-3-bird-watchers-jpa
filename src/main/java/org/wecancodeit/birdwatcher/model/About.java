@@ -46,5 +46,16 @@ public class About {
     public String getMemberImageUrl(){
         return memberImageUrl;
     }
+
+    @Override
+    public String toString() {
+        return "About{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", memberBio='" + memberBio + '\'' +
+                ", memberImageUrl='" + memberImageUrl + '\'' +
+                '}';
+    }
     
 }
