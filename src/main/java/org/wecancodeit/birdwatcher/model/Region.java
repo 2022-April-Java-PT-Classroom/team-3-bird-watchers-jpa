@@ -9,7 +9,6 @@ import javax.persistence.Id;
 public class Region {
 
     @Id@GeneratedValue
-
     private Long id;
     private String regionName;
     private String country;
