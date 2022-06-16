@@ -13,9 +13,15 @@ public class AboutController {
     @Resource
     private AboutRepository aboutRepo;
 
-    @RequestMapping("/about")
+    @RequestMapping("/templates/about.html")
     public String displayAbout(Model model){
         model.addAttribute("about", aboutRepo.findAll());
         return "about";
+    }
+
+    @RequestMapping("/templates/index.html")
+    public String displayHome(Model model){
+        model.addAttribute("about", aboutRepo.findAll());
+        return "index";
     }
 }

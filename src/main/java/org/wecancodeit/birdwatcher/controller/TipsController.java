@@ -5,18 +5,18 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.wecancodeit.birdwatcher.repo.CountryRepository;
 
-
 import javax.annotation.Resource;
 
 @Controller
-public class CountryController {
-
+public class TipsController {
     @Resource
-    CountryRepository countryRepo;
+    CountryRepository tipsRepo;
 
-    @RequestMapping("/templates/continent.html")
-    public String displayCountry(Model model){
-        model.addAttribute("about", countryRepo.findAll());
-        return "continent";
+    @RequestMapping("/templates/tips.html")
+    public String displayBlog(Model model){
+        model.addAttribute("about", tipsRepo.findAll());
+        return "tips";
     }
+
+
 }
