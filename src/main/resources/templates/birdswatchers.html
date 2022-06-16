@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" th:href="@{/css/style.css}">
 </head>
 <body>
     <div id="container">
         <header>
         <div id="navbar">
-            <a>Home</a>
             <a href="/templates/about.html" target="_blank">About</a>
             <a href="/templates/continent.html" target="_blank">Continents</a>
             <a href="/templates/blog.html" target="_blank">Blog</a>
@@ -25,7 +24,7 @@
             <table id="wrapper">
                 <tr>
                     <article >
-                    <td><img src="img.jpg" alt="A bird"></td>
+                    <td><img src="/images/img.png" alt="A bird"></td>
                     <td class="overview">
                         <div >
                             <h2>Overview</h2> 
