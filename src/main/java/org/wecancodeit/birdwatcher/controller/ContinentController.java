@@ -19,4 +19,9 @@ public class ContinentController {
         model.addAttribute("continents", continentRepo.findAll());
         return "continents";
     }
+    @RequestMapping("/continent")
+    public String displaySingleContinent(){
+
+        return "continent";
+    }
 }
