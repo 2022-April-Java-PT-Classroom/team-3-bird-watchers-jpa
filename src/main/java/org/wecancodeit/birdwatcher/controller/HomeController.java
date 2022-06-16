@@ -1,4 +1,4 @@
-package org.wecancodeit.birdwatcher.controller;
+ppackage org.wecancodeit.birdwatcher.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,7 +7,6 @@ public class HomeController {
 
     @GetMapping({"/"})
     public String displayHomePage() {
-
         return "index";
     }
 }

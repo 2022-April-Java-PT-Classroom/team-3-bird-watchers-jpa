@@ -1,3 +1,4 @@
+
 package org.wecancodeit.birdwatcher.controller;
 
 import org.springframework.stereotype.Controller;
@@ -13,15 +14,9 @@ public class AboutController {
     @Resource
     private AboutRepository aboutRepo;
 
-    @RequestMapping("/templates/about.html")
+    @RequestMapping("/about")
     public String displayAbout(Model model){
         model.addAttribute("about", aboutRepo.findAll());
         return "about";
-    }
-
-    @RequestMapping("/templates/index.html")
-    public String displayHome(Model model){
-        model.addAttribute("about", aboutRepo.findAll());
-        return "index";
     }
 }
