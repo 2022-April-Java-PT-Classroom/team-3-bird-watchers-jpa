@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/blog.css"/>
     <title>Blog</title>
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
 </head>
 <body>
+    <header>
+        <div id="navbar">
+            <a href="/templates/index.html" target="_blank">Home</a>
+            <a href="/templates/about.html" target="_blank">About</a>
+           <a href="/templates/continent.html" target="_blank">Continents</a>
+            <a href="/templates/tips.html" target="_blank">Tips/Suggestion</a>
+        </div >
+         </header>
     <h1>BLOG</h1>
 </body>
 </html>
