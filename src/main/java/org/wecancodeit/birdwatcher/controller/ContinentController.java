@@ -13,13 +13,13 @@ public class ContinentController {
     @Resource
     private ContinentRepository continentRepo;
 
-    @RequestMapping("/continents")
+    @RequestMapping("/templates/continents.html")
 
     public String displayContinent(Model model){
         model.addAttribute("continents", continentRepo.findAll());
         return "continents";
     }
-    @RequestMapping("/continent")
+    @RequestMapping("/templates/continent.html")
     public String displaySingleContinent(){
 
         return "continent";
