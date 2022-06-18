@@ -1,4 +1,4 @@
-body{
+  body{
     background-color: rgb(245, 246, 243);
 }
 
@@ -18,7 +18,7 @@ img{
     width: 800px;
     height: 100%;
     position: relative;
-    
+
 }
 
 #wrapper{
@@ -26,7 +26,8 @@ img{
 }
 
 #navbar{
-   display: flex;
+   display: flex ;
+   position: sticky;
     background-color: rgb(234, 242, 205);
     justify-content: center;
     padding: 1px;
@@ -39,10 +40,10 @@ img{
     text-decoration: none;
   }
   #navbar a:hover{
-    background-color:#ffffff;
+    background-color:#65e2ac;
     color: black;
   }
-  h1{
+  h1, h2{
     font-size: 30px;
     font-family: cursive;
     text-align: center;
@@ -58,14 +59,25 @@ img{
       align-items: center;
     color: rgb(100, 78, 49);
   }
-  p, h2 {
-    text-align: center;
-     font-size: 24px;
-  }
-   ul{
-    
-     font-size: 24px;
   p, h2{
     text-align: center;
      font-size: 24px;
+  }
+ .blog{
+    display: grid;
+    width: fit-content;
+    height: auto;
+  }
+  .blogtext{
+    background-color: rgb(224, 240, 190);
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+    color: rgb(100, 78, 49);
+  }
+  iframe{
+    width: 100%;
+  }
+  .tips img{
+    width: 100%;
   }

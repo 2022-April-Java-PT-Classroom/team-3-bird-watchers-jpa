@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Regions</title>
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+    <div id="navbar">
+        <a href="/templates/index.html" target="_blank">Home</a>
+        <a href="/templates/continent.html" target="_blank">Continent</a>
+        <a href="/templates/country.html" target="_blank">Countries</a>
+    </div >
+</header>
+<table border="1" cellpadding="2" cellspacing="2">
+    <tr>
+        <td>
+            <img src="../../images/africa-regions.jpg"
+                 th:attr="src=@{/images/africa-regions.jpg}"/>
+        </td>
+        <td>
+            <p>The UN Statistics Division has subdivided the African continent into five regions,
+            Northern Africa, Central or Middle Africa , Southern Africa, East Africa,
+            and Western Africa.</p>
+        </td>
+    </tr>
+
+</table>
+
+<div class="footer">
+    <footer>
+        Last Updated June 2022 - JAC Entreprises
+    </footer>
+</div>
+</body>
+</html>
