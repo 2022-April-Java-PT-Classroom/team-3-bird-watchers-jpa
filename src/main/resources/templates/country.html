@@ -14,6 +14,7 @@
             <a href="/templates/index.html" target="_blank">Home</a>
             <a href="/templates/about.html" target="_blank">About</a>
             <a href="/templates/continent.html" target="_blank">Continent</a>
+            <a href="/templates/region.html" target="_blank">Regions</a>
             <a href="/templates/blog.html" target="_blank">Blog</a>
             <a href="/templates/tips.html" target="_blank">Tips/Suggestion</a>
         </div >
@@ -29,7 +30,10 @@
             <tr>
                 
                 <td><img src="../../images/tanzania.jpg"
-                         th:attr="src=@{/images/tanzania.jpg}"/></td>
+                         th:attr="src=@{/images/tanzania.jpg}"/>
+                    <img src="../../images/map-of-tanzania.png"
+                         th:attr="src=@{/images/map-of-tanzania.png}"/>
+                </td>
                 <td>
                     <h2>TANZANIA</h2>
                     <p>Tanzania is the largest country in East Africa and includes the islands of Zanzibar, 
@@ -55,7 +59,10 @@
             </tr>
             <tr>
                 <td><img src="../../images/morocco.jpg"
-                         th:attr="src=@{/images/morocco.jpg}"/></td>
+                         th:attr="src=@{/images/morocco.jpg}"/>
+                    <img src="../../images/map-of-morocco.png"
+                         th:attr="src=@{/images/map-of-morocco.png}"
+                </td>
                 <td>
                     <h2>MOROCCO</h2>
                     <p>Morocco is located in the northwest corner of Africa and is bordered by the North Atlantic Ocean and the Mediterranean Sea. 
@@ -76,6 +83,12 @@
             </tr>
         </table>
     </div>
+</div>
+
+<div class="footer">
+    <footer>
+        Last Updated June 2022 - JAC Entreprises
+    </footer>
 </div>
 </body>
 </html>

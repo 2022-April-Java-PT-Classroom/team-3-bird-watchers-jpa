@@ -3,37 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Continents</title>
-  <link rel="stylesheet" th:href="@{/continents.css}" />
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
 
 </head>
 <body>
 <header>
+
+    <div id="navbar">
+      <a href="/templates/index.html" target="_blank">Home</a>
+      <a href="/templates/about.html" target="_blank">About</a>
+      <a href="/templates/country.html" target="_blank">Countries</a>
+        <a href="/templates/region.html" target="_blank">Regions</a>
+      <a href="/templates/blog.html" target="_blank">Blog</a>
+      <a href="/templates/tips.html" target="_blank">Tips/Suggestion</a>
+    </div >
+
   <h1>List of All Continents to be  Explored</h1>
+  <img src="../../images/africa-map.png"
+       th:attr="src=@{/images/africa-map.png}"/>
 </header>
 <main>
   <div class="hero-image"></div>
   <section>
-    <p>AC Enterprises is an organization that specializes in offering niche adventures
-      dedicated to learning about Earth's various ecosystems and unique terrains.</p>
+    <p>Tourism is an important economic sector for many countries in Africa. There are many countries
+        that benefit heavily from tourism like Uganda, Algeria, Egypt, South Africa, Kenya, Morocco,
+        Tunisia, Ghana and Tanzania.<br>
+        Africa has an impressive abundance of birdlife. Some of the birds are typical African birds,
+        migrant birds and others endemic to the region.
+    </p>
     <p>Please feel free to explore various types of birds that are found in each of the above continents.</p>
   </section>
 
-
 </main>
-<nav>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Continent</a>
-  <a href="#">Country</a>
-  <a href="#">Region</a>
-</nav>
 
-<footer>
-
-  &copy; 2022 team-3 wcci
-</footer>
-
-
-
+<div class="footer">
+    <footer>
+        Last Updated June 2022 - JAC Entreprises
+    </footer>
+</div>
 </body>
 </html>
