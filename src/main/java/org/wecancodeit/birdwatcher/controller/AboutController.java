@@ -14,9 +14,9 @@ public class AboutController {
     @Resource
     private AboutRepository aboutRepo;
 
-    @RequestMapping("templates/about.html")
+    @RequestMapping("/about")
     public String displayAbout(Model model){
-        model.addAttribute("about", aboutRepo.findAll());
-        return "about";
+        model.addAttribute("aboutModel", aboutRepo.findAll());
+        return "aboutView.html";
     }
 }

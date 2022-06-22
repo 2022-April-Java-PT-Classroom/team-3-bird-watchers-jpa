@@ -13,8 +13,8 @@ public class TipsController {
     CountryRepository tipsRepo;
 
     @RequestMapping("/templates/tips.html")
-    public String displayBlog(Model model){
-        model.addAttribute("about", tipsRepo.findAll());
+    public String displayTips(Model model){
+        model.addAttribute("tips", tipsRepo.findAll());
         return "tips";
     }
 
