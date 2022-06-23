@@ -25,6 +25,7 @@ main{
 }
 
 figure{
+    align-items: stretch;
     display: flex;
     flex-wrap: wrap;
     height: auto;
