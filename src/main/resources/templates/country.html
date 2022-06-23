@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Continent</title>
+    <title th:text="${country.name}" >Continent</title>
     <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
 </head>
 <body>
@@ -29,58 +29,26 @@
             </tr>
             <tr>
                 
-                <td><img src="../../images/tanzania.jpg"
-                         th:attr="src=@{/images/tanzania.jpg}"/>
-                    <img src="../../images/map-of-tanzania.png"
-                         th:attr="src=@{/images/map-of-tanzania.png}"/>
+                <td>
+                    <img th:src="${country.imageUrl}" />
+
+
                 </td>
                 <td>
-                    <h2>TANZANIA</h2>
-                    <p>Tanzania is the largest country in East Africa and includes the islands of Zanzibar, 
-                    Pemba, and Mafia. About twice the size of California, this African country is bordered 
-                    by the Indian Ocean and eight countries: Kenya, Uganda, Rwanda, Burundi, Democratic Republic of Congo,
-                     Zambia, Malawi, and Mozambique.</p>
-                    <p>Tanzania is home to some of Africa's most famous national parks and natural attractions, including majestic Mount Kilimanjaro.
+                    <h2 th:text="${country.name}">TANZANIA</h2>
+
+                    <p th:text="${country.description}">Tanzania is home to some of Africa's most famous national parks and natural attractions, including majestic Mount Kilimanjaro.
                      Consequently, the most popular things to do in Tanzania and the reason many people visit the country, 
                      are the safaris and wildlife-related adventures.</p>
-                     <p><strong>The best regions for Tanzania Birdwatching:</strong>
+                     <p><strong>The best regions for <span th:text="${country.name}">Tanzania</span> Birdwatching:</strong>
                          <ul>
-                             <li>Katavi National Park</li>
-                             <li>Lake Manyara Safaris</li>
-                             <li>Mahale Mountains National Park</li>
-                             <li>Ngorongoro Crater Safaris</li>
-                             <li>Nyerere National Park</li>
-                             <li>Ruaha National Park</li>
-                            <li>Serengeti Safaris</li>
-                            <li>Tarangire Safaris</li>
+                             <li th:text="${country.sites}">Katavi National Park</li>
+
                          </ul>
                      </p>
                 </td>
             </tr>
-            <tr>
-                <td><img src="../../images/morocco.jpg"
-                         th:attr="src=@{/images/morocco.jpg}"/>
-                    <img src="../../images/map-of-morocco.png"
-                         th:attr="src=@{/images/map-of-morocco.png}"
-                </td>
-                <td>
-                    <h2>MOROCCO</h2>
-                    <p>Morocco is located in the northwest corner of Africa and is bordered by the North Atlantic Ocean and the Mediterranean Sea. 
-                        Algeria and Western Sahara are the land borders to the south and east. Morocco is about the same size as California. 
-                        The high Atlas Mountains separate the mild coastline from the harsh Sahara.</p>
-                    <p>Morocco is home to the world's largest desert known as the Sahara desert! In Africa, Morocco is the 25th largest country 
-                        with a population of almost 34 million. Since its foundation, the country has been under the rule of a series of independent dynasties.</p>
-                    <p><strong>Top sites visited for Birdwatching are: </strong></p>
-                     <p>Oukaïmeden, Erg Chebbi, the Tagdilt track and Ouarzazate. 
-                     Our Morocco birding tour is designed for wildlife enthusiasts visiting Morocco for the first time. 
-                     The tour starts at the interesting city of Marrakech.<br>
-                     Morocco is a bird watcher's delight. The coastal wetlands of Oualidia and the Souss-Massa National Park are ideal
-                      for spotting migrant species in October and March-April, while mountain areas abound with raptors 
-                      like golden eagles and Egyptian vultures.
-                    </p>
 
-                </td>
-            </tr>
         </table>
     </div>
 </div>

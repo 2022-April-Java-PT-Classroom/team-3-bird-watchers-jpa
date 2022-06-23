@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Continents</title>
+    <title th:each="continent: ${continents}"  th:text="${continent.name}">Continents</title>
     <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
 
 </head>
@@ -33,7 +33,7 @@
         Africa has an impressive abundance of birdlife. Some of the birds are typical African birds,
         migrant birds and others endemic to the region.
     </p>
-    <p>Please feel free to explore various types of birds that are found in each of the above continents.</p>
+
   </section>
 
 </main>
@@ -56,29 +56,11 @@
             and number of families and species change every year. Differences in common and scientific names between
             the Clements taxonomy and that of the ABC are frequent but are seldom noted here.
         </p>
-        <ul>
-            <li> Ostriches  </li>
-            <li> Ducks, geese, and waterfowl    </li>
-            <li> Guineafowl    </li>
-            <li> New World quail     </li>
-            <li> Pheasants, grouse, and allies    </li>
-            <li> Flamingos   </li>
-            <li> Grebes    </li>
-            <li> Pigeons and doves    </li>
-            <li> Mesites    </li>
-            <li> Sandgrouse    </li>
-            <li> Bustards    </li>
-            <li> Turacos    </li>
-            <li> Cuckoos </li>
-            <li> Nightjars and allies</li>
-            <li> Nightjars and allies</li>
-            <li> Rails, gallinules, and coot </li>
-            <li> Cranes </li>
-            <li> Sandpipers and allies</li>
-            <li> Penguins </li>
-            <li> Albatrosses</li>
-
+        <p> Please feel free to explore various types of birds found in each of countries below by clicking the links below: </p>
+        <ul >
+            <li th:each="country: ${countries}"><a th:href="@{/templates/country(id=${country.id})}" th:text="${country.name}"></a></li>
         </ul>
+
     </div>
 
 </section>
