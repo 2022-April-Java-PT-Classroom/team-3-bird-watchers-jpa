@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html   xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
+    <link href="./css/aboutLayout.css" rel="stylesheet">
+    <title>Team Members</title>
+
+</head>
+<body>
+<div id="container">
+    <header>
+        <div id="navbar">
+            <a href="/templates/index.html" target="_blank">Home</a>
+            <a href="/templates/continent.html" target="_blank">Continents</a>
+            <a href="/templates/country.html" target="_blank">Countries</a>
+            <a href="/templates/blog.html" target="_blank">Blog</a>
+            <a href="/templates/tips.html" target="_blank">Tips/Suggestion</a>
+        </div >
+    </header>
+    <main>
+        <h1 class="about__title">About Team 3</h1>
+        <section class="team-member">
+            <h2 class="team-member__name" th:each="about:${aboutModel}" th:text="${about.firstName} + ' ' + ${about.lastName}">Team Member Name</h2>
+
+            <figure th:each="about:${aboutModel}">
+                <img th:src="${about.imgUrl}">
+            </figure>
+
+            <article class="member_info" th:each="about:${aboutModel}">
+                <p><span th:text="${about.bio}"></span></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</div>
+</body>
+</html>

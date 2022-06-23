@@ -14,7 +14,7 @@ public class BlogController {
 
     @RequestMapping("/templates/blog.html")
     public String displayBlog(Model model){
-        model.addAttribute("about", blogRepo.findAll());
+        model.addAttribute("blog", blogRepo.findAll());
         return "blog";
     }
 

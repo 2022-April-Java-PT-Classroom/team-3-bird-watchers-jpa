@@ -12,7 +12,7 @@
         <header>
         <div id="navbar">
             <a href="/templates/index.html" target="_blank">Home</a>
-            <a href="/templates/about.html" target="_blank">About</a>
+            <a href="/about" target="_blank">About</a>
             <a href="/templates/continent.html" target="_blank">Continent</a>
             <a href="/templates/region.html" target="_blank">Regions</a>
             <a href="/templates/blog.html" target="_blank">Blog</a>
@@ -29,8 +29,10 @@
             </tr>
             <tr>
                 
+
                 <td>
                     <img th:src="${country.imageUrl}" />
+
 
 
                 </td>
@@ -45,10 +47,33 @@
                              <li th:text="${country.sites}">Katavi National Park</li>
 
                          </ul>
-                     </p>
+                    </p>
+
+
+                    <P>This is a list of the bird species recorded in Tanzania. The avifauna of Tanzania included a total of 1156 confirmed species as
+                        of September 2021. Of them, 34 are endemic, and four have been introduced by humans. One additional species is hypothetical as
+                        defined below; it and two proposed endemic species are not included in the counts.
+                        <ul>
+                    <li> Ostriches  </li>
+                        <img src="../static/images/ostrich.jpg"  th:attr="src=@{/images/ostrich.jpg}"/>
+                    <li> Ducks, geese, and waterfowl  </li>
+                        <img src="../static/images/duck.jpg"    th:attr="src=@{/images/duck.jpg}"/>
+                    <li> Pheasants and grouse  </li>
+                        <img src="../static/images/crested_francolin_pheasants.jpg"  th:attr="src=@{/images/crested_francolin_pheasants.jpg}"/>
+                    <li> Cuckoos  </li>
+                        <img src="../static/images/cuckoos.jpg"     th:attr="src=@{/images/cuckoos.jpg}"/>
+                    <li> Honeyguides   </li>
+                        <img src="../static/images/honeyguide.jpg"      th:attr="src=@{/images/honeyguide.jpg}"/>
+                </ul>
+                    </P>
+
+
                 </td>
             </tr>
 
+
+
+            
         </table>
     </div>
 </div>

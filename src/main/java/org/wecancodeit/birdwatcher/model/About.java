@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Collection;
+import java.util.Objects;
 
 @Entity
 public class About {
@@ -14,18 +16,19 @@ public class About {
     private Long id;
     private String firstName;
     private String lastName;
-    private String memberBio;
-    private String memberImageUrl;
+    private String bio;
+    private String imgUrl;
+
 
     public About(){
 
     }
 
-    public About(String firstName, String lastName, String memberBio, String memberImageUrl){
+    public About(String firstName, String lastName, String bio, String imgUrl){
         this.firstName = firstName;
         this.lastName = lastName;
-        this.memberBio = memberBio;
-        this.memberImageUrl = memberImageUrl;
+        this.bio = bio;
+        this.imgUrl = imgUrl;
     }
 
     public Long getId(){
@@ -40,13 +43,14 @@ public class About {
         return lastName;
     }
 
-    public String getMemberBio(){
-        return memberBio;
+    public String getBio(){
+        return bio;
     }
 
-    public String getMemberImageUrl(){
-        return memberImageUrl;
+    public String getImgUrl(){
+        return imgUrl;
     }
+
 
     @Override
     public String toString() {
@@ -54,9 +58,22 @@ public class About {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", memberBio='" + memberBio + '\'' +
-                ", memberImageUrl='" + memberImageUrl + '\'' +
+                ", bio='" + bio + '\'' +
+                ", imgUrl='" + imgUrl + '\'' +
                 '}';
     }
-    
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        About about = (About) o;
+        return id.equals(about.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
 }

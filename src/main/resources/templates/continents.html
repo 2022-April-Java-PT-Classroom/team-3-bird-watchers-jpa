@@ -11,7 +11,7 @@
 
     <div id="navbar">
       <a href="/templates/index.html" target="_blank">Home</a>
-      <a href="/templates/about.html" target="_blank">About</a>
+      <a href="/about" target="_blank">About</a>
       <a href="/templates/country.html" target="_blank">Countries</a>
         <a href="/templates/region.html" target="_blank">Regions</a>
       <a href="/templates/blog.html" target="_blank">Blog</a>
@@ -56,9 +56,11 @@
             and number of families and species change every year. Differences in common and scientific names between
             the Clements taxonomy and that of the ABC are frequent but are seldom noted here.
         </p>
+
         <p> Please feel free to explore various types of birds found in each of countries below by clicking the links below: </p>
         <ul >
             <li th:each="country: ${countries}"><a th:href="@{/templates/country(id=${country.id})}" th:text="${country.name}"></a></li>
+
         </ul>
 
     </div>
