@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin: 2rem auto;
+    max-width: 60rem;
+    width: 100%;
+    background-color: rgb(224, 240, 190);
+}
+
+.team-member{
+    background-color: rgb(224, 240, 190);
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20% 20%;
+    grid-gap: 16px;
+
+}
+
+.team-member__name{
+    display: grid;
+}
+
+figure{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    max-width: 100%
+    justify-content: space-around;
+
+}
+
+.member_info{
+    color: rgb(100, 78, 49);
+    display: flex;
+    flex-wrap: wrap;
+    font: sans-serif;
+    font-size: 16px;
+    padding: 10px
+}
