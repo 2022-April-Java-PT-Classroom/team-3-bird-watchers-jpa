@@ -25,6 +25,7 @@ public class populator implements CommandLineRunner {
     @Resource
     private BirdRepository birdStorage;
 
+    
     @Override
     public void run(String... args) throws Exception {
         Continent continent = new Continent("Africa", "continent rich in various types of beautiful birds");
