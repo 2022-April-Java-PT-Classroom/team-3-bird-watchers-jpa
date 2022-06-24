@@ -25,9 +25,10 @@ public class populator implements CommandLineRunner {
     @Resource
     private BirdRepository birdStorage;
 
-    
+
     @Override
     public void run(String... args) throws Exception {
+
         Continent continent = new Continent("Africa", "continent rich in various types of beautiful birds");
         continentStorage.save(continent);
         Country Tanzania = new Country("Tanzania", "/images/map-of-tanzania.png",
@@ -57,7 +58,7 @@ public class populator implements CommandLineRunner {
 
         About cm = new About("Chuda", "Rimal", "Front/Back End Web Developer based in Columbus, Ohio.", "../images/chuda.jpg");
 
-        About serena = new About("Serena", "Howard", "bio","../images/serena.jpg");
+        About serena = new About("Serena", "Howard", "Full-Stack Developer based in Columbus, Ohio","../images/serena.jpg");
 
         About jimmy = new About("Jimmy", "Negron", "I am software developer started my journey to become a software developer with we can code it in april-2022. I am excited to see where this career takes me.", "../images/jimmy.jpg");
 
@@ -73,9 +74,12 @@ public class populator implements CommandLineRunner {
         Bird flamingos = new Bird("Flamingos", "Pink, large bird", "/images/flamingos.jpg");
         Bird cuckoos = new Bird("Cuckoos", "Small, brown bird", "/images/cuckoos.jpg");
 
+
         birdStorage.save(ostrich);
         birdStorage.save(flamingos);
         birdStorage.save(cuckoos);
+
+
 
     }
 }

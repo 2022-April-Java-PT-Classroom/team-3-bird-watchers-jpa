@@ -78,8 +78,15 @@ img{
   iframe{
     width: 100%;
   }
+
+  .tips{
+    display: flex;
+    justify-content: center;
+  }
   .tips img{
+    display: flex;
     width: 100%;
+    justify-content: center;
   }
 
   .Countries_list{
@@ -106,7 +113,7 @@ img{
   }
     ul a:hover{
     border: 1px solid brown;
-    background-color: rgb(78, 72, 72);
+     background-color:#65e2ac;
   }
 
   .county_sites{
