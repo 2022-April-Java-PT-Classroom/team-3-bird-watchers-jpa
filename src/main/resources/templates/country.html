@@ -43,8 +43,8 @@
                      Consequently, the most popular things to do in Tanzania and the reason many people visit the country, 
                      are the safaris and wildlife-related adventures.</p>
                      <p><strong>The best regions for <span th:text="${country.name}">Tanzania</span> Birdwatching:</strong>
-                         <ul class="country_sites">
-                             <li th:text="${country.sites}">Katavi National Park</li>
+                         <ul>
+                             <li th:text="${country.sites}" class="country_site">Katavi National Park</li>
 
                          </ul>
                     </p>
@@ -54,7 +54,7 @@
                         of September 2021. Of them, 34 are endemic, and four have been introduced by humans. One additional species is hypothetical as
                         defined below; it and two proposed endemic species are not included in the counts.
                         <ul>
-                    <li th:each="bird:${birds}" ><a th:href="@{/bird(id=${bird.id})}" th:text="${bird.name}"></a></li>
+                    <li th:each="bird:${birds}" ><a th:href="@{/bird(id=${bird.id})}" th:text="${bird.name}" class="bird_link"></a></li>
 <!--                        <img th:each="bird:${birds}" th:src="${bird.imgUrl}"/>-->
 
 <!--                    <li> Ducks, geese, and waterfowl  </li>-->

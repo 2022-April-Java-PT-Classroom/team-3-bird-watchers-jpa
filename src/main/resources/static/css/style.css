@@ -109,6 +109,13 @@ img{
       background-color: #65e2ac;;
   }
 
-  .county_sites{
-  font-size: 30px;
+  ul li{
+  font-size: 24px;
+  list-style-type: none;
+  }
+  .bird_link {
+  font-size: 24px;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  color: rgb(100, 78, 49);;
   }
