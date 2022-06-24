@@ -106,7 +106,7 @@ img{
   }
     ul a:hover{
     border: 1px solid brown;
-    background-color: rgb(78, 72, 72);
+      background-color: #65e2ac;;
   }
 
   .county_sites{
