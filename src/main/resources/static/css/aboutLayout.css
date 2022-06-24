@@ -1,15 +1,22 @@
 *{
-
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+#container{
+  background-color: rgb(100, 78, 49);
+}
+
+h1,h2{
+color: rgb(224, 240, 190)
+}
+
 main{
     margin: 2rem auto;
     max-width: 60rem;
+    justify-content: center;
     width: 100%;
-
 }
 
 .team-member{
@@ -20,12 +27,16 @@ main{
     justify-content: center;
 }
 
+
+
 .team-member__name{
 
 }
 
 figure img{
-background-color: rgb(224, 240, 190);
+      border: 1px solid rgb(224, 240, 190);
+      border-radius: 10px;
+    background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     height: auto;
@@ -36,17 +47,19 @@ background-color: rgb(224, 240, 190);
 
 }
 
-figure img:hover{
-   flex-grow: 5;
-}
-
-
 .member_info{
     color: rgb(100, 78, 49);
     display: flex;
     flex-wrap: wrap;
     font: sans-serif;
     font-size: 16px;
-    margin-top: 2rem;
-    padding: 10px
+    margin-top: 4rem;
+    padding: 3px
+}
+
+p{
+    border: 1px solid white;
+    background-color: rgb(224, 240, 190);
+    border-radius: 10px;
+    padding: 5px;
 }
