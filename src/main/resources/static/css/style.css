@@ -81,3 +81,30 @@ img{
   .tips img{
     width: 100%;
   }
+
+  .Countries_list{
+    font-size: 36px;
+    color: rgb(100, 78, 49);
+    text-decoration: none;
+    list-style-type: none;
+    font-style: bold;
+
+  }
+ .africa ul{
+  border: 1px solid brown;
+  border-radius: 10px;
+  background-color: rgb(224, 240, 190);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-around;
+  list-style-type: none;
+
+
+  }
+    ul a:hover{
+    border: 1px solid brown;
+    background-color: rgb(78, 72, 72);
+  }
