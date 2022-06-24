@@ -22,6 +22,7 @@ public class Populator implements CommandLineRunner {
     @Resource
     private AboutRepository aboutRepo;
 
+    
     @Override
     public void run(String... args) throws Exception {
         About farida = new About("Farida", "NDiaye", "I have an Associate degree and 2 years+ of experience in Business" +
