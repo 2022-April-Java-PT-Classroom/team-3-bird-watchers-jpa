@@ -54,16 +54,17 @@
                         of September 2021. Of them, 34 are endemic, and four have been introduced by humans. One additional species is hypothetical as
                         defined below; it and two proposed endemic species are not included in the counts.
                         <ul>
-                    <li> Ostriches  </li>
-                        <img src="../static/images/ostrich.jpg"  th:attr="src=@{/images/ostrich.jpg}"/>
-                    <li> Ducks, geese, and waterfowl  </li>
-                        <img src="../static/images/duck.jpg"    th:attr="src=@{/images/duck.jpg}"/>
-                    <li> Pheasants and grouse  </li>
-                        <img src="../static/images/crested_francolin_pheasants.jpg"  th:attr="src=@{/images/crested_francolin_pheasants.jpg}"/>
-                    <li> Cuckoos  </li>
-                        <img src="../static/images/cuckoos.jpg"     th:attr="src=@{/images/cuckoos.jpg}"/>
-                    <li> Honeyguides   </li>
-                        <img src="../static/images/honeyguide.jpg"      th:attr="src=@{/images/honeyguide.jpg}"/>
+                    <li th:each="bird:${birds}" ><a th:href="@{/bird(id=${bird.id})}" th:text="${bird.name}"></a></li>
+<!--                        <img th:each="bird:${birds}" th:src="${bird.imgUrl}"/>-->
+
+<!--                    <li> Ducks, geese, and waterfowl  </li>-->
+<!--                        <img src="../static/images/duck.jpg"    th:attr="src=@{/images/duck.jpg}"/>-->
+<!--                    <li> Pheasants and grouse  </li>-->
+<!--                        <img src="../static/images/crested_francolin_pheasants.jpg"  th:attr="src=@{/images/crested_francolin_pheasants.jpg}"/>-->
+<!--                    <li> Cuckoos  </li>-->
+<!--                        <img src="../static/images/cuckoos.jpg"     th:attr="src=@{/images/cuckoos.jpg}"/>-->
+<!--                    <li> Honeyguides   </li>-->
+<!--                        <img src="../static/images/honeyguide.jpg"      th:attr="src=@{/images/honeyguide.jpg}"/>-->
                 </ul>
                     </P>
 

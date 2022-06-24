@@ -11,18 +11,19 @@ public class Bird {
     public String name;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public Long id;
-    public String description;
-    public String type;
+    private Long id;
+    private String description;
+    private String imgUrl;
+
 
     public Bird() {
 
     }
 
-    public Bird(String name, String description, String type) {
+    public Bird(String name, String description, String imgUrl) {
         this.name = name;
         this.description = description;
-        this.type = type;
+        this.imgUrl = imgUrl;
     }
 
     public String getName() {
@@ -37,8 +38,9 @@ public class Bird {
         return description;
     }
 
-    public String getType() {
-        return type;
+
+    public String getImgUrl(){
+        return imgUrl;
     }
 
     @Override
@@ -47,7 +49,7 @@ public class Bird {
                 "name='" + name + '\'' +
                 ", id=" + id +
                 ", description='" + description + '\'' +
-                ", type='" + type + '\'' +
+                ", imgUrl='" + imgUrl + '\'' +
                 '}';
     }
 }

@@ -3,6 +3,7 @@ package org.wecancodeit.birdwatcher;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.wecancodeit.birdwatcher.model.About;
+import org.wecancodeit.birdwatcher.model.Bird;
 import org.wecancodeit.birdwatcher.model.Continent;
 import org.wecancodeit.birdwatcher.model.Country;
 import org.wecancodeit.birdwatcher.repo.AboutRepository;
@@ -66,6 +67,14 @@ public class populator implements CommandLineRunner {
         aboutRepo.save(serena);
         aboutRepo.save(jimmy);
 
+
+        Bird ostrich = new Bird("Ostrich", "Tall, long-legged", "/images/ostrich.jpg");
+        Bird flamingos = new Bird("Flamingos", "Pink, large bird", "/images/flamingos.jpg");
+        Bird cuckoos = new Bird("Cuckoos", "Small, brown bird", "/images/cuckoos.jpg");
+
+        birdStorage.save(ostrich);
+        birdStorage.save(flamingos);
+        birdStorage.save(cuckoos);
 
     }
 }

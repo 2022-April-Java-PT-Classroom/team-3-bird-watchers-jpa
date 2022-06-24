@@ -12,7 +12,6 @@
     <div id="navbar">
       <a href="/templates/index.html" target="_blank">Home</a>
       <a href="/about" target="_blank">About</a>
-      <a href="/templates/country.html" target="_blank">Countries</a>
         <a href="/templates/region.html" target="_blank">Regions</a>
       <a href="/templates/blog.html" target="_blank">Blog</a>
       <a href="/templates/tips.html" target="_blank">Tips/Suggestion</a>
@@ -59,7 +58,7 @@
 
         <p> Please feel free to explore various types of birds found in each of countries below by clicking the links below: </p>
         <ul >
-            <li th:each="country: ${countries}"><a th:href="@{/templates/country(id=${country.id})}" th:text="${country.name}"></a></li>
+            <li th:each="country: ${countries}"><a th:href="@{/templates/country(id=${country.id})}" th:text="${country.name}" class="Countries_list"></a></li>
 
         </ul>
 
